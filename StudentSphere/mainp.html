@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            overflow-x: hidden;
+        }
+
+        .sidebar {
+            height: 90px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            background-color: #008080;
+            padding: 0 20px;
+            position: fixed; 
+            z-index: 1000;
+            width: 96%;
+            position: absolute;
+            top: 10px;
+            margin-right: 2px;
+        }
+
+        
+        .logo-container {
+            display: flex;
+            align-items: center; 
+        }
+
+        #logo img {
+            height: 90px;
+            margin-right: 10px; 
+            height: 86px;
+            
+        }
+
+        #logotext {
+            color: antiquewhite;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+
+        .sections {
+            color: antiquewhite;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0; 
+            font-size: 20px;
+            margin-left: auto;
+            
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .action_logo {
+            
+            width: 60px;
+             margin: 3px;
+        }
+        
+        .image {
+            background-image: url('banner.jpg'); /* Make sure to replace 'bg.jpeg' with the correct image path */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            position: relative;
+            top: 90px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box {
+            background-color: rgba(152, 235, 241, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            width: 200px; 
+            height: 210px;
+            text-align: center;
+            align-items: center;
+            
+        }
+        .box:hover {
+        transform: translateY(-5px); /* Lift effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    }
+    .box p {
+        margin: 0; 
+        font-size: 24px; 
+        color: #4A4A4A;
+        transition: color 0.3s;
+        transform: 0.3s;
+        text-align: center; 
+        transition: color 0.3s; 
+        margin-top: 10px;
+        text-decoration: underline;
+        border-color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .box:hover p {
+    color: #008080; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    }
+    .content {
+    margin-top: 10px;
+    font-size: 19px;
+    font-stretch: expanded;
+    color: #353535;
+    line-height: 1.5;
+    }
+        
+    </style>
+<head>
+    <title>StudentSphere</title>
+    <header>
+        <div class="sidebar">
+            
+            <div class="logo-container">
+                <div id="logo">
+                    <a href="#"><img src="logosecc.png" alt="slogo"></a>
+                </div>
+                <div id="logotext">STUDENT SPHERE</div>
+            </div>
+
+            <div class="sections">About | Help</div>
+            
+
+            <div class="actions">
+               
+                <div class="action_logo"><img class="action_logo" src="person.png" alt="person"></div>
+            </div>
+        </div>       
+    </header>
+    <main>
+        <div class="image">
+            <div class="box">
+                <p>To-Do List</p>
+                <div class="content">Create a to-do list to plan your day and stay organized!</div>
+            </div>
+            <div class="box">
+                <p><a href="shop.html" style="text-decoration: none; color: #4A4A4A;">Shop</a></p>
+                <div class="content">Browse through our exclusive collection of items just for you!</div>
+            </div>
+            <div class="box">
+                <p>Mental Health Tracker</p>
+                <div class="content">Track your mental well-being and reflect on your feelings daily.</div>
+            </div>
+        </div>
+    </main>
+</head>
+<body>
+</body>
+</html>
